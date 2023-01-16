@@ -37,11 +37,11 @@ h1{
     color: #FFFFFF;
 }
 
-.elemento-lista, h1{
+a{
     transition: 0.5s;
 }
 
-.elemento-lista:hover, h1:hover{
+a:hover{
     color: #C042D7;
 }
 
@@ -74,4 +74,15 @@ h1{
 
 #selfieJason, .descripcion{
     border: 2px solid #FFFFFF;
+}
+
+/* Footer */
+
+
+
+
+footer{
+    box-shadow: #C042D7;
+    text-align: center;
+    background-color: #251833;
 }
