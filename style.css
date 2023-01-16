@@ -44,3 +44,34 @@ h1{
 .elemento-lista:hover, h1:hover{
     color: #C042D7;
 }
+
+/* Body */
+
+#presentacion{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.descripcion h2{
+    padding: 0;
+    margin: 5px;
+}
+
+.descripcion{
+    padding:5px;
+    max-width: 500px;
+    text-align: center;
+}
+
+#selfieJason{
+    height: 200px;
+    border-radius: 100px;
+}
+
+#selfieJason, .descripcion{
+    border: 2px solid #FFFFFF;
+}
