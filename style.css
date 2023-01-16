@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #301F41;
+    color: #FFFFFF;
+}
+
+/* Header */
+
+h1{
+    display: inline;
+    font-size: x-large;
+    margin: 0 10px;
+}
+
+#barra{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#barra-lista{
+    list-style: none;
+}
+
+#barra-lista li{
+    display: inline;
+    margin: 5px;
+    font-weight: 600;
+}
+
+#barra-list li,a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.elemento-lista, h1{
+    transition: 0.5s;
+}
+
+.elemento-lista:hover, h1:hover{
+    color: #C042D7;
+}
