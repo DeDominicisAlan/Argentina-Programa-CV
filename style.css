@@ -2,16 +2,16 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #301F41;
+    background-color: #1a2639;
     color: #FFFFFF;
 }
 
 /* Header */
 
-h1{
-    display: inline;
-    font-size: x-large;
+#icono-header{
+    font-size: 25px;
     margin: 0 10px;
+    color:#c24d2c;
 }
 
 #barra{
@@ -34,15 +34,15 @@ h1{
 
 #barra-list li,a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #c24d2c;
 }
 
 a{
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 a:hover{
-    color: #C042D7;
+    color: white;
 }
 
 /* Body */
@@ -73,7 +73,7 @@ a:hover{
 }
 
 #selfieJason, .descripcion{
-    border: 2px solid #FFFFFF;
+    border: 2px solid #c24d2c;
 }
 
 /* Footer */
@@ -82,7 +82,6 @@ a:hover{
 
 
 footer{
-    box-shadow: #C042D7;
     text-align: center;
-    background-color: #251833;
+    background-color: #151e2e;
 }
