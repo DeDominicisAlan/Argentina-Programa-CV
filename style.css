@@ -46,7 +46,7 @@ a:hover{
 
 /* Body */
 
-#presentacion{
+.presentacion{
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -60,39 +60,51 @@ a:hover{
     flex-direction: column;
 }
 
-#presentacion h1{
+.presentacion h1{
     font-size: 40px;
 }
 
-#presentacion h2{
+.presentacion h2{
     font-size: 20px;
     color: #c24d2c;
 }
 
-#presentacion h2,#presentacion h1{
+.presentacion h2,.presentacion h1{
     margin: 0;
 }
 
-
-.descripcion{
-    padding:15px;
-    max-width: 500px;
-    display: flex;
-}
-
 #selfieJason{
-    height: 200px;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
 }
 
-#selfieJason, .descripcion{
+#selfieJason, .informacion{
     border: 2px solid #c24d2c;
 }
 
+/* Body Descripcion */
+
+#perfil{
+    max-width: 300px;
+    padding: 40px;
+}
+
+.sobre-mi h2{color: #c24d2c;}
+
+.descripcion{
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion-contenedor{
+    max-width: 500px;
+}
+
 /* Footer */
-
-
-
 
 footer{
     text-align: center;
