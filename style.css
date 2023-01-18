@@ -47,6 +47,7 @@ a:hover{
 /* Body */
 
 .presentacion{
+    height: 80vh;
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -94,6 +95,7 @@ a:hover{
 .sobre-mi h2{color: #c24d2c;}
 
 .descripcion{
+    height: 80vh;
     padding:15px;
     display: flex;
     justify-content: center;
