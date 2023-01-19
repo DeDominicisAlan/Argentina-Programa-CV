@@ -49,7 +49,7 @@ a:hover{
 /* Body */
 
 .presentacion{
-    height: 80vh;
+    height: 90vh;
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -94,10 +94,11 @@ a:hover{
     padding: 40px;
 }
 
-.sobre-mi h2{color: #c24d2c;}
+.sobre-mi h2, #h2-habilidades{
+    color: #c24d2c;}
 
 .descripcion{
-    height: 90vh;
+    height: 80vh;
     padding:15px;
     display: flex;
     justify-content: center;
@@ -119,9 +120,54 @@ a:hover{
     font-size: 15px;
 }
 
+/* Proyectos */
+
+#contenedor-habilidades h2{
+    font-size: 30px;
+}
+
+#contenedor-habilidades{
+    background-color: #202e46;
+    height: 90vh;
+    padding: 10px 20%;
+}
+
+#habilidades{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px 100px;
+    text-align: center;
+}
+
+.habilidades-item{
+    color: #FFFFFF;
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+#sql, #php{
+    width: 130px;
+    height: 100px;
+}
+
+.habilidades-item:hover{
+    filter: grayscale(0%);
+    color: #c24d2c;
+}
+
 /* Footer */
 
 footer{
-    text-align: center;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #151e2e;
 }
