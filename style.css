@@ -16,6 +16,8 @@ body{
 
 #barra{
     padding: 0 20px;
+    width: 97%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +83,7 @@ a:hover{
     border-radius: 100px;
 }
 
-#selfieJason, .informacion{
+#selfieJason, .contenedor-grid{
     border: 2px solid #c24d2c;
 }
 
@@ -95,7 +97,7 @@ a:hover{
 .sobre-mi h2{color: #c24d2c;}
 
 .descripcion{
-    height: 80vh;
+    height: 90vh;
     padding:15px;
     display: flex;
     justify-content: center;
@@ -104,6 +106,17 @@ a:hover{
 
 .descripcion-contenedor{
     max-width: 500px;
+}
+
+.contenedor-grid{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item{
+    margin: 5px;
+    font-size: 15px;
 }
 
 /* Footer */
