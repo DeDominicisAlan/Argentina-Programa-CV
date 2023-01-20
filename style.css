@@ -206,16 +206,49 @@ a:hover{
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 40px;
     list-style: none;
 }
 
 .proyectos-item{
-    text-align: center;
-    padding: 10px;
-    height: 225px;
-    width: 275px;
-    border: 2px solid #c24d2c;
+    height: 250px;
+    width: 250px;
+    background-color: #182335;
+    box-shadow: 10px 10px 5px 0px rgba(13,19,28,0.84);
+    background-size: cover;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #c24d2c;
+}
+
+.overlay:hover{
+    opacity: 0.7;
+}
+
+.proyectos-item p{
+    color:  white;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+#Ejemplo1{
+    background-image: url(img/Proyectos/Ejemplo1.jpg);
+}
+
+#Ejemplo2{
+    background-image: url(img/Proyectos/Ejemplo2.jpg);
+}
+
+#Ejemplo3{
+    background-image: url(img/Proyectos/Ejemplo3.jpg);
 }
 
 /* Contacto */
