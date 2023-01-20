@@ -54,7 +54,7 @@ a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #151e2e; /*En caso que el fondo no carge*/
+    background-color: #202e46; /*En caso que el fondo no carge*/
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ a:hover{
     color: #c24d2c;}
 
 .descripcion{
-    height: 80vh;
+    height: 100vh;
     padding:15px;
     display: flex;
     justify-content: center;
@@ -120,15 +120,36 @@ a:hover{
     font-size: 15px;
 }
 
-/* Proyectos */
+/* Habilidades */
 
-#contenedor-habilidades h2{
-    font-size: 30px;
+
+
+#boton-habilidades{
+    width: 120px;
+	height: 30px;
+    background-color: #c24d2c;
+    color: #202e46;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#boton-habilidades:hover{
+    color: #FFFFFF;
+}
+
+.habilidades-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #contenedor-habilidades{
     background-color: #202e46;
-    height: 90vh;
+    height: 80vh;
     padding: 10px 20%;
 }
 
@@ -165,6 +186,36 @@ a:hover{
 .habilidades-item:hover{
     filter: grayscale(0%);
     color: #c24d2c;
+}
+
+/* Proyectos */
+
+#proyectos{
+    height: 80vh;
+    background-color: #151e2e;
+    padding: 10px 20%;
+}
+
+#proyectos-h2{
+    color: #c24d2c;
+}
+
+#proyectos-flex{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    list-style: none;
+}
+
+.proyectos-item{
+    text-align: center;
+    padding: 10px;
+    height: 225px;
+    width: 275px;
+    border: 2px solid #c24d2c;
 }
 
 /* Contacto */

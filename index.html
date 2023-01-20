@@ -18,7 +18,8 @@
             <li><a href="#" >Inicio</a></li>
             <li><a href="#desc" >Sobre Mi</a></li>
             <li><a href="#contenedor-habilidades" >Habilidades</a></li>
-            <li><a href="#" >Contacto</a></li>
+            <li><a href="#proyectos" >Proyectos</a></li>
+            <li><a href="#cont" >Contacto</a></li>
         </ul>
     </div>
     
@@ -53,7 +54,10 @@
     <!--Habilidades-->
 
     <div id="contenedor-habilidades">
-        <h2 id="h2-habilidades">Habilidades</h2>
+        <div class="habilidades-flex">
+            <h2 id="h2-habilidades">Habilidades</h2>
+            <button id="boton-habilidades">Color</button>
+        </div>
         <div id="habilidades">
             <div class="habilidades-item">
                 <h2>HTML</h2>
@@ -82,9 +86,28 @@
         </div>
     </div>
 
+    <!--Proyectos-->
+
+    <div id="proyectos">
+        <h2 id="proyectos-h2">Proyectos</h2>
+        <ul id="proyectos-flex">
+            <li class="proyectos-item"> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, placeat aliquid repellendus eius magnam nisi odio dolorem, nobis cupiditate in fugiat dolore numquam porro. Tempore nam placeat nesciunt reiciendis qui!
+            </li>
+
+            <li class="proyectos-item">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita minus quidem, in asperiores similique saepe mollitia quisquam, eius placeat dolorem? Neque quisquam soluta dolorem ut ab reprehenderit sapiente tempore?
+            </li>
+
+            <li class="proyectos-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe aut pariatur esse eum delectus voluptatem quae. Quo, vitae aut? Sed voluptate inventore ipsum unde, libero error cumque provident repudiandae.
+            </li>
+        </ul>
+    </div>
+
     <!--Contacto-->
 
-    <div class="contacto">
+    <div class="contacto" id="cont">
         <h2>Contacto</h2>
             <form class="contacto-form">
                 <input type="text" placeholder="Nombre" class="contacto-item" required>
