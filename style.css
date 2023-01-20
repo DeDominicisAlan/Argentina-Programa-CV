@@ -94,7 +94,7 @@ a:hover{
     padding: 40px;
 }
 
-.sobre-mi h2, #h2-habilidades{
+.sobre-mi h2, #h2-habilidades, .contacto{
     color: #c24d2c;}
 
 .descripcion{
@@ -152,14 +152,33 @@ a:hover{
     height: 100px;
 }
 
-#sql, #php{
-    width: 130px;
-    height: 100px;
+#sql{
+    width: 140px;
+    height: 90px;
+}
+
+#php{
+    width: 140px;
+    height: 120px;
 }
 
 .habilidades-item:hover{
     filter: grayscale(0%);
     color: #c24d2c;
+}
+
+/* Contacto */
+
+.contacto{
+    height: 50vh;
+    padding: 10px 20%;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px    100px;
+}
+
+input{
+    display: block;
 }
 
 /* Footer */
