@@ -86,25 +86,12 @@
 
     <div class="contacto">
         <h2>Contacto</h2>
-        <form>
-            <div class="contacto-item">
-                <h3>Nombre</h3>
-                <input type="text">
-            </div>
-            <div class="contacto-item">
-                <h3>Apellido</h3>
-                <input type="text">
-            </div>
-            <div class="contacto-item">
-                <h3>Email</h3>
-                <input type="email">
-            </div>
-            <div class="contacto-item">
-                <h3>Mensaje</h3>
-                <input type="text">
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
+            <form class="contacto-form">
+                <input type="text" placeholder="Nombre" class="contacto-item" required>
+                <input type="email" placeholder="Email" class="contacto-item" required>
+                <textarea name="message" rows="7" cols="30" placeholder="Mensaje" class="contacto-item" required></textarea>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
     </div>
 
     <!--Footer-->
@@ -114,6 +101,7 @@
             <i class="fa-brands fa-github"></i>
             DeDominicisAlan</a>
     </footer>
+
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/cb61407d7a.js" crossorigin="anonymous"></script>
 </body>
