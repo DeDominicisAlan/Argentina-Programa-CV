@@ -127,10 +127,10 @@ a:hover{
 #boton-habilidades{
     width: 120px;
 	height: 30px;
-    background-color: #c24d2c;
-    color: #202e46;
-    border-radius: 5px;
-    border: 0;
+    background-color: #202e46;
+    color: #c24d2c;
+    border: 2px solid #c24d2c ;
+    border-radius: 2px;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
@@ -139,6 +139,7 @@ a:hover{
 
 #boton-habilidades:hover{
     color: #FFFFFF;
+    background-color: #c24d2c;
 }
 
 .habilidades-flex{
@@ -211,10 +212,12 @@ a:hover{
 }
 
 .proyectos-item{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 350px;
     background-color: #182335;
     box-shadow: 10px 10px 5px 0px rgba(13,19,28,0.84);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -233,10 +236,11 @@ a:hover{
     opacity: 0.7;
 }
 
-.proyectos-item p{
+.proyectos-item a{
     color:  white;
     font-size: xx-large;
     font-weight: 800;
+    text-decoration: none;
 }
 
 #Ejemplo1{
