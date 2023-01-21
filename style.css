@@ -78,8 +78,8 @@ a:hover{
 
 #selfieJason{
     object-fit: cover;
-    height: 150px;
-    width: 150px;
+    height: 10rem;
+    width: 10rem;
     border-radius: 100px;
 }
 
@@ -310,4 +310,70 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #151e2e;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    #barra{
+        padding: 0;
+        width: 100vw;
+        align-items: flex-start;
+        position: absolute;
+    }
+
+    #barra-lista{
+        
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .sobre-mi{
+        text-align: center;
+    }
+
+    .descripcion{
+        flex-direction: column;
+        padding: 120px 0;
+    }
+
+    #contenedor-habilidades{
+        height: 1300px;
+    }
+
+    #habilidades{
+        grid-template-columns: auto;
+    }
+
+    .habilidades-flex{
+       flex-direction: column;
+    }
+
+    #proyectos-flex{
+        padding-left: 0;
+    }
+
+    .proyectos-item{
+        width: 250px;
+        margin: 25px 0;
+    }
+
+    #proyectos{
+        height: 700px;
+    }
+
+    #proyectos-flex{
+        grid-template-columns: auto;
+    }
+
+}
+
+@media only screen and (max-width: 996px) {
+    #barra{
+        padding: 0;
+        width: 90vw;
+        align-items: flex-start;
+    }
 }
