@@ -14,13 +14,22 @@ body{
     color:#c24d2c;
 }
 
+#barra-boton{
+    display: none;
+}
+
 #barra{
+    z-index: 1;
     padding: 0 20px;
     width: 97%;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.barra-scroll{
+    background-color: #1a2639;
 }
 
 #barra-lista{
@@ -258,7 +267,7 @@ a:hover{
 /* Contacto */
 
 .contacto{
-    height: 80vh;
+    height: 90vh;
     margin: 10px 20%;
 }
 
@@ -316,18 +325,27 @@ footer{
 
 @media only screen and (max-width: 576px) {
     #barra{
-        padding: 0;
-        width: 100vw;
-        align-items: flex-start;
-        position: absolute;
+        z-index: 1;
+        width: 97vw;
+        background-color: #151e2e;
+        justify-content: space-between;
+    }
+
+    #barra i{
+       
+    }
+
+    #barra-lista li{
+        margin: 3px 0;
+        display: none;
     }
 
     #barra-lista{
-        
+        width: 100vw;
         padding: 0;
         display: flex;
         flex-direction: column;
-        text-align: end;
+        text-align: center;
     }
 
     .sobre-mi{
@@ -362,18 +380,26 @@ footer{
 
     #proyectos{
         height: 700px;
+        text-align: center;
     }
 
     #proyectos-flex{
         grid-template-columns: auto;
     }
 
+    .contacto{
+        text-align: center;
+    }
+
+    .barra-scroll{
+        background: none;
+    }
 }
+
 
 @media only screen and (max-width: 996px) {
     #barra{
-        padding: 0;
-        width: 90vw;
+        padding: 10px;
         align-items: flex-start;
     }
 }

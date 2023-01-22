@@ -1,5 +1,6 @@
 const color = document.getElementsByClassName('habilidades-item');
 const boton = document.querySelector('#boton-habilidades');
+const barra = document.getElementById('barra')
 
 let cambio = false;
 
@@ -12,3 +13,7 @@ boton.addEventListener('click',  () => {
     cambio = true
     console.log(cambio);
 });
+
+window.addEventListener('scroll', () =>{
+    barra.classList.toggle('barra-scroll', window.scrollY > 680);
+} )
