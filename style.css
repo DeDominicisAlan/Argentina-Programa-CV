@@ -14,6 +14,12 @@ body{
     color:#c24d2c;
 }
 
+#icono-barra{
+    font-size: 25px;
+    color: #c24d2c;
+    display: none;
+}
+
 #barra-boton{
     display: none;
 }
@@ -30,6 +36,8 @@ body{
 
 .barra-scroll{
     background-color: #1a2639;
+    /*box-shadow: 0px 1px 5px 0px #c24d2c;
+    transition: .5s;*/
 }
 
 #barra-lista{
@@ -129,6 +137,9 @@ a:hover{
     font-size: 15px;
 }
 
+.grid-item p{
+    display: inline;
+}
 /* Habilidades */
 
 
@@ -267,7 +278,7 @@ a:hover{
 /* Contacto */
 
 .contacto{
-    height: 90vh;
+    height: 100vh;
     margin: 10px 20%;
 }
 
@@ -321,31 +332,39 @@ footer{
     background-color: #151e2e;
 }
 
+/* Barra: clase para cuando se clickea */
 
 
-@media only screen and (max-width: 576px) {
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
     #barra{
+        padding: 10px 10px;
         z-index: 1;
         width: 97vw;
         background-color: #151e2e;
         justify-content: space-between;
     }
 
-    #barra i{
-       
-    }
-
-    #barra-lista li{
-        margin: 3px 0;
-        display: none;
-    }
-
     #barra-lista{
         width: 100vw;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
+        display: none;
         text-align: center;
+        transition: .5s;
+    }
+
+    .barra-click{
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        background-color: #151e2e;
+        top: 29px;
+        right: 10px;   
+    }
+
+    #icono-barra{
+        display: block;
+        padding-right: 30px;
     }
 
     .sobre-mi{
@@ -355,6 +374,16 @@ footer{
     .descripcion{
         flex-direction: column;
         padding: 120px 0;
+        height: auto;
+    }
+
+    .contenedor-grid{
+        margin: 15px;
+    }
+
+    .grid-item p{
+        display: block;
+        margin: 0;
     }
 
     #contenedor-habilidades{
@@ -396,10 +425,18 @@ footer{
     }
 }
 
-
-@media only screen and (max-width: 996px) {
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     #barra{
         padding: 10px;
         align-items: flex-start;
     }
+}
+
+@media screen and (max-width: 1200px){
+    .proyectos-item{
+        height: 150px;
+        width: 200px;
+    }
+    
 }
