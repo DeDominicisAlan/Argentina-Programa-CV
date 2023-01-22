@@ -170,8 +170,8 @@ a:hover{
 
 #contenedor-habilidades{
     background-color: #202e46;
-    height: 80vh;
-    padding: 10px 20%;
+    height: 90vh;
+    padding: 60px 20%;
 }
 
 #habilidades{
@@ -181,6 +181,7 @@ a:hover{
     align-items: center;
     gap: 20px 100px;
     text-align: center;
+    height: 75vh;
 }
 
 .habilidades-item{
@@ -204,6 +205,15 @@ a:hover{
     height: 120px;
 }
 
+.habilidades-itemv2{
+    filter: none;
+}
+
+.habilidades-itemv2:hover{
+    color: #c24d2c;
+    transition: 0.2s;
+}
+
 .habilidades-item:hover{
     filter: grayscale(0%);
     color: #c24d2c;
@@ -212,9 +222,10 @@ a:hover{
 /* Proyectos */
 
 #proyectos{
-    height: 80vh;
+    height: 90vh;
     background-color: #151e2e;
-    padding: 10px 20%;
+    padding: 50px 10px;
+    text-align: center;
 }
 
 #proyectos-h2{
@@ -222,21 +233,22 @@ a:hover{
 }
 
 #proyectos-flex{
-    height: 60vh;
+    height: 70vh;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto   auto auto;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
     list-style: none;
+    padding: 0;
 }
 
 .proyectos-item{
-    height: 150px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
     background-color: #182335;
     box-shadow: 10px 10px 5px 0px rgba(13,19,28,0.84);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -264,22 +276,23 @@ a:hover{
 }
 
 #Ejemplo1{
-    background-image: url(img/Proyectos/Ejemplo1.jpg);
+    background-image: url(img/Proyectos/Ejemplo4.jpg);
 }
 
 #Ejemplo2{
-    background-image: url(img/Proyectos/Ejemplo2.jpg);
+    background-image: url(img/Proyectos/Ejemplo5.jpg);
 }
 
 #Ejemplo3{
-    background-image: url(img/Proyectos/Ejemplo3.jpg);
+    background-image: url(img/Proyectos/Ejemplo6.jpg);
 }
 
 /* Contacto */
 
 .contacto{
-    height: 100vh;
+    height: 85vh;
     margin: 10px 20%;
+    text-align: center;
 }
 
 .contacto-form{
@@ -334,10 +347,50 @@ footer{
 
 /* Barra: clase para cuando se clickea */
 
+@media screen and (max-width: 1200px){
+    *{
+        text-align: center;
+    }
+
+    #contenedor-habilidades{
+        height:100vh;
+    }
+
+    #habilidades{
+        padding-top: 80px;
+        
+    }
+
+    .presentacion{
+        height: 100vh;
+    }
+
+    #proyectos{
+        height: 120vh;
+    }
+
+    #proyectos-flex{
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .proyectos-item{
+        height: 150px;
+        width: 400px;
+    }
+    
+    .contacto-item{
+        text-align: start;
+    }
+}
 
 
 /* Smartphone */
 @media only screen and (max-width: 767px) {
+    #perfil{
+        padding: 40px 0;
+    }
+
     #barra{
         padding: 10px 10px;
         z-index: 1;
@@ -347,10 +400,11 @@ footer{
     }
 
     #barra-lista{
-        width: 100vw;
+        width: 110vw;
         display: none;
         text-align: center;
         transition: .5s;
+        padding: 0;
     }
 
     .barra-click{
@@ -359,7 +413,7 @@ footer{
         position: absolute;
         background-color: #151e2e;
         top: 29px;
-        right: 10px;   
+        right: 8px;   
     }
 
     #icono-barra{
@@ -377,6 +431,11 @@ footer{
         height: auto;
     }
 
+    .descripcion-contenedor, #barra-lista{
+        max-width: -webkit-fill-available;
+        font-size: smaller;
+    }
+
     .contenedor-grid{
         margin: 15px;
     }
@@ -384,10 +443,11 @@ footer{
     .grid-item p{
         display: block;
         margin: 0;
+        font-size: small;
     }
 
     #contenedor-habilidades{
-        height: 1300px;
+        height: 1500px;
     }
 
     #habilidades{
@@ -431,12 +491,75 @@ footer{
         padding: 10px;
         align-items: flex-start;
     }
-}
 
-@media screen and (max-width: 1200px){
-    .proyectos-item{
-        height: 150px;
-        width: 200px;
+    #barra i{
+        margin: 10px;
     }
+
+    .descripcion{
+        flex-direction: column;
+        padding: 120px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    #proyectos-flex{
+        height: 700px;
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
     
 }
+
+/* Falta Galaxy Fold y Nest Hub responsive */
+
+
+/*@media screen and (width:412px) {
+    .descripcion, #contenedor-habilidades, footer{
+        width: 117vw;
+    }
+
+    .descripcion-contenedor{
+        width: 400px;
+    }
+
+    .contacto{
+        margin: 0;
+        width: 117vw;
+    }
+
+    .grid-item{
+        font-size: smaller;
+    }
+
+    #proyectos{
+        width: 77vw;
+        height: 1000px;
+    }
+
+    .proyectos-item{
+        width: 325px;
+    }
+
+    #contenedor-habilidades{
+        padding: 0 ;
+        height: 1000px;
+    }
+
+    .presentacion{
+        width: 100vw;
+        padding: 50px 35px;
+    }
+
+    #barra{
+        width: 112vw;
+        padding: 20px 10px;
+    }
+
+    #barra-lista{
+        width: 117vw;
+        padding: 10px 0px;
+        right: 0px;
+    }
+}*/
