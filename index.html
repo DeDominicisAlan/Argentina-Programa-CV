@@ -13,7 +13,7 @@
 </head>
 <body>
     <!--Header-->
-    <div id="barra">
+    <nav id="barra">
         <i class="fa-solid fa-code" id="icono-header"></i>
         <a href="javascript:void(0)" onclick="funcion()">
             <i class="fa-solid fa-bars" id="icono-barra"></i>
@@ -24,21 +24,20 @@
             <li><a href="#contenedor-habilidades" >Habilidades</a></li>
             <li><a href="#proyectos" >Proyectos</a></li>
             <li><a href="#cont" >Contacto</a></li>
-        </ul>
-               
-    </div>
+        </ul>              
+    </nav>
     
     <!--Header-->
     
-    <div class="presentacion">
+    <article class="presentacion">
         <img src="img/img2.jpg" alt="Selfie de Jason Welch" id="selfieJason">
         <h1>Jason Welch</h1>
         <h2>Full Stack Developer</h2>
-    </div>
+    </article>
 
     <!--Body-->
 
-    <div class="descripcion" id="desc">
+    <article class="descripcion" id="desc">
         <img id="perfil" src="img/08.jpg" alt="Imagen de una persona de traje, de brazos cruzados">
         <div class="descripcion-contenedor">
             <div class="sobre-mi">
@@ -55,11 +54,11 @@
                 <div class="grid-item"><strong>Email: </strong> <p>JasonWelch@example.com</p></div>
             </div>
         </div>
-    </div>
+    </article>
 
     <!--Habilidades-->
 
-    <div id="contenedor-habilidades">
+    <article id="contenedor-habilidades">
         <div class="habilidades-flex">
             <h2 id="h2-habilidades">Habilidades</h2>
             <button id="boton-habilidades">Color</button>
@@ -90,11 +89,11 @@
                 <img src="./img/iconos/php.png" alt="Logo de PHP" class="icon" id="php">
             </div>
         </div>
-    </div>
+    </article>
 
     <!--Proyectos-->
 
-    <div id="proyectos">
+    <article id="proyectos">
         <h2 id="proyectos-h2">Proyectos</h2>
         <ul id="proyectos-flex">
             <li class="proyectos-item" id="Ejemplo1"> 
@@ -121,11 +120,11 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </article>
 
     <!--Contacto-->
 
-    <div class="contacto" id="cont">
+    <article class="contacto" id="cont">
         <h2>Contacto</h2>
             <form class="contacto-form">
                 <input type="text" placeholder="Nombre" class="contacto-item" required>
@@ -133,7 +132,7 @@
                 <textarea name="message" rows="7" cols="30" placeholder="Mensaje" class="contacto-item" required></textarea>
                 <input type="submit" value="Enviar" class="enviar">
             </form>
-    </div>
+    </article>
 
     <!--Footer-->
 
